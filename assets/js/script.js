@@ -14,6 +14,35 @@
 //control css using Javascript: hide questions and scoreboard initially and display questions when you start 
 var timer = 5
 
+// Questions for quiz
+const questions = [
+    {
+        question: "Commonly used data types do NOT include__________.",
+        choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
+        answer: "c. alerts"
+    },
+    {
+        questions: "The condition in an if/ else statement is in enclosed in __________.",
+        choices: ["a. parenthesis", "b. square brackets", "c. quotes", "d. curly brackets"],
+        answer: "a. parenthesis"
+    },
+    {
+        question: "The first index of an array is ____.",
+        choices: ["a. 0", "b. 1", "c. 8", "d. any"],
+        answer: "a. 0"
+    },
+    {
+        question: "Inside which HTML element do we put the JavaScript?",
+        choices: ["a. <js>", "b. <javascript>", "c. <javaEl>", "d. <script>"],
+        answer: "d. <script>"
+    },
+    {
+        question: "How do you round the number 4.15 to the nearest integer?",
+        choices: ["a. round(4.15)", "b. int.round(4.15)", "c. Math.round(4.15)", "d. Math.int(4.15)"],
+        answer: "c. Math.round(4.15)"
+    },
+];
+
 //Button starts quiz
 var startbutton = document.querySelector("#start-quiz");
 var startFunction = function() {
@@ -73,14 +102,3 @@ startbutton.addEventListener("click", startFunction);
 
 
 
-//Questions
-//1. Commonly used data types do NOT include__________.
-//strings, booleans, *alerts, numbers
-//2. Inside which HTML element do you put the JavaScript?
-// <js> <title> *<script> <javascript>
-//3. How do you add a comment in JavaScript?
-// *//comment <!--comment--!> 
-//4. The condition in an if/else statement is inclosed in _________.
-// curly brackets, *parenthesis, quotes, square brackets
-//5. How do you round the number 4.15 to the nearest integer?
-// round(4.15) int.round(4.15) *Math.round(4.15) Math.int(4.15)
